@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="signUp">
+        <div id="leftDiv">
+            <img src="images/Speed test-rafiki.png" id="signUpImg">
+
+        </div>
+        <div id="formDiv">
+            <h1 class="signUpheader" id="signUpTitle">Sign up</h1>
+            <h1 class="signUpheader" id="signInTitle">Sign in</h1>
+            <form id="signUpForm">
+                <input type="text" id="firstNameInput" required placeholder="First Name" pattern="^[a-zA-Z ]*$">
+                <input type="text" id="lastNameInput" required placeholder="Last Name" pattern="^[a-zA-Z ]*$">
+                <input type="email" id="mailInput" required placeholder="E-mail Address" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                <!-- password: Minimum eight characters, at least one letter and one number: -->
+                <input type="password" id="passInput" required placeholder="Password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+                <input type="password" id="rePassInput" required placeholder="Re-enter Password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+                <br>
+                <button type="button" id="signUpBtn">SIGN UP</button>
+                <button type="button" id="FirstlogInBtn">LOG IN</button>
+
+            </form>
+            <form id="signInForm">
+               
+                <input type="email" id="signInMailInput" required placeholder="E-mail Address" >
+               
+                <input type="password" id="signInPassInput" required placeholder="Password">
+                
+                <br>
+                <p id="signInValidationTxt">Invalid e-mail address or password</p>
+                <button type="button" id="signInBtn">LOG IN</button>
+                <button type="button" id="secondSignUpBtn">SIGN UP</button>
+            </form>
+
+        </div>
+    </section>
+
+
+    <script src="js/cookies.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

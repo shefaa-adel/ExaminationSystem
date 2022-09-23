@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section id="examArea">
+      <div id="myProgress">
+        <div id="myBar"></div>
+      </div>
+      <div id="flexDiv">
+        <div id="questionBody">
+          <p id="questionValue"></p>
+          <ul id="questionChoices"></ul>
+
+          <button id="preBtn">Previous</button>
+          <div id="questionNum"></div>
+          <button id="nextBtn">Next</button><br />
+          <button id="markBtn">Mark</button><br />
+          <button id="submitBtn">Submit</button>
+        </div>
+        <div id="markedDiv"><h3>Marked questions</h3></div>
+      </div>
+    </section>
+    <section id="resultArea">
+      <div id="resultImgDiv">
+        <img src="images/Analysis-amico.png" id="signUpImg" />
+      </div>
+      <div id="resultDiv">
+        <p>The Exam has been Submitted Successfully </p>
+        <i class="far fa-check-circle"></i>
+        <br />
+        <h1>
+          your exam score is:<br />
+          <span id="resultValue"></span> /5
+        </h1>
+      </div>
+    </section>
+    <script src="js/script2.js"></script>
+  </body>
+</html>
